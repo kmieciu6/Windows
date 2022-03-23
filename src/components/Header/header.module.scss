@@ -1,0 +1,24 @@
+@import "src/scss/settings/colors";
+
+.header {
+  left: 0;
+  right: 0;
+  top: 0;
+  border-bottom: 1px solid $color-gray;
+  box-shadow: 0 3px 6px $color-gray;
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1352px;
+  margin: 0 auto;
+
+  @media (max-width: 1352px) {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+

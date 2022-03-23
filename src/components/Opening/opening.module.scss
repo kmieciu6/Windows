@@ -1,0 +1,41 @@
+@import "src/scss/settings/fonts";
+@import "src/scss/settings/mixins";
+
+.opening {
+  background: yellow;
+  height: calc(100vh - 70px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  .container {
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: $font-raleway;
+      font-size: 3.0625rem;
+      margin-bottom: 20px;
+      margin-top: 200px;
+
+      @media (max-width: 768px) {
+        margin-top: 0;
+      }
+    }
+
+    p {
+      font-family: $font-open-sans;
+      font-size: 1rem;
+      margin-bottom: 60px;
+
+      @include xs {
+        padding: 0 30px;
+      }
+    }
+  }
+}

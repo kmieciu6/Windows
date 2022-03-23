@@ -1,0 +1,63 @@
+@import "src/scss/settings/mixins";
+@import "src/scss/settings/fonts";
+@import "src/scss/settings/colors";
+
+.contact__box_first {
+  h1 {
+    font-family: $font-raleway;
+    font-size: 3.0625rem;
+    margin-bottom: 22px;
+
+    @include sm {
+      margin-bottom: 15px;
+    }
+  }
+
+  p {
+    font-family: $font-open-sans;
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+}
+
+.contacts {
+  display: flex;
+
+  @include sm {
+    flex-direction: column;
+  }
+
+  img {
+    margin-right: 10px;
+    width: 27px;
+    height: 27px;
+  }
+
+  p {
+    font-family: $font-open-sans;
+    font-size: 1rem;
+    line-height: 1.6875rem;
+    font-weight: 400;
+    color: $color-gray;
+
+    @include sm {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.contact__mail {
+  display: flex;
+}
+
+.contact__phone {
+  display: flex;
+}
+
+.mail {
+  margin: 0 30px;
+}
+
+.phone {
+  margin: 0 30px;
+}

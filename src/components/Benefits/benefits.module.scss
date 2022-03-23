@@ -1,0 +1,251 @@
+@import "src/scss/settings/mixins";
+@import "src/scss/settings/colors";
+@import "src/scss/settings/fonts";
+
+.container {
+  max-width: 1352px;
+  margin: 0 auto;
+
+  @media (max-width: 1352px) {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+.benefits {
+  background: $color-light-gray;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 120px;
+  }
+
+  &__box_first,
+  &__box_second {
+    padding: 90px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $color-white;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  &__box_first {
+    margin-top: 150px;
+
+    @include sm {
+      flex-direction: column-reverse;
+      margin: 40px 15px 20px;
+      padding: 30px 15px;
+      justify-content: center;
+    }
+  }
+
+  &__box_second {
+    margin: 37px 0;
+    padding: 70px;
+
+    @include sm {
+      flex-direction: column;
+      justify-content: center;
+      margin: 20px 15px;
+      padding: 30px 15px;
+    }
+  }
+
+  &__box_third {
+    display: flex;
+    justify-content: space-between;
+    height: 370px;
+    margin-bottom: 150px;
+
+    @include sm {
+      flex-direction: column;
+      margin: 20px 0 40px;
+    }
+  }
+
+  h2 {
+    font-family: $font-raleway;
+    font-size: 2.25rem;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-family: $font-open-sans;
+    font-size: 1rem;
+    margin-bottom: 50px;
+
+    @include sm {
+      margin: 10px 0;
+    }
+  }
+
+  &__box__text_first {
+    margin-left: 35px;
+    width: 416px;
+
+    @include sm {
+      width: auto;
+      margin: 0 20px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 328px;
+      height: 4px;
+      background: $color-redish;
+
+      @include sm {
+        display: none;
+      }
+    }
+  }
+
+  &__box__text_second {
+    margin-right: 20px;
+    width: 416px;
+
+    @include sm {
+      width: auto;
+      margin: 0 20px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 328px;
+      height: 4px;
+      background: $color-primary;
+
+      @include sm {
+        display: none;
+      }
+    }
+  }
+
+  &__box__text_third {
+    height: 370px;
+    background: $color-white;
+    border-radius: 5px;
+    border: 1px solid #E8E9ED;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 70px;
+
+    @include sm {
+      margin: 0 15px;
+      padding: 50px 30px 30px 30px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 328px;
+      height: 4px;
+      background: $color-green;
+
+      @include sm {
+        display: none;
+      }
+    }
+  }
+
+  &__box__img_first {
+    padding-right: 110px;
+    padding-top: 100px;
+
+    @include sm {
+      padding: 30px 50px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 180px;
+      height: 180px;
+      border-radius: 41px;
+      background: $color-redish;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 50px;
+      right: 150px;
+
+      @include sm {
+        transform: scale(0.5) rotate(45deg);
+        top: -40px;
+        right: -10px;
+      }
+    }
+  }
+
+  &__box__img_second {
+    &::before {
+      content: "";
+      display: block;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      background: $color-primary;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      @include sm {
+        transform: scale(0.4);
+        top: -100px;
+        left: -90px;
+      }
+    }
+  }
+
+  &__box__img_first,
+  &__box__img_second,
+  &__box__img_third {
+    position: relative;
+  }
+
+  img {
+    position: relative;
+    width: 386px;
+    height: auto;
+    margin-right: 70px;
+
+    @include sm {
+      width: 190px;
+      margin-right: 0;
+    }
+  }
+
+  &__box__img_third {
+    background: $color-green;
+    height: 370px;
+    width: 440px;
+    border-radius: 5px;
+    border: 1px solid #E8E9ED;
+
+    @include sm {
+      width: auto;
+      height: auto;
+      margin: 0 15px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    img {
+      width: 295px;
+      height: auto;
+      margin-top: 100px;
+      margin-left: 62px;
+
+      @include sm {
+        margin: 20px auto -50px;
+      }
+    }
+  }
+}

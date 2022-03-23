@@ -1,0 +1,76 @@
+@import "src/scss/settings/mixins";
+@import "src/scss/settings/fonts";
+@import "src/scss/settings/colors";
+
+.statistics {
+  text-align: center;
+  margin-bottom: 120px;
+
+  h2 {
+    font-family: $font-raleway;
+    font-size: 2.25rem;
+    margin: 100px 0;
+
+    @include xs {
+      font-size: 1.875rem;
+      line-height: 2.1875rem;
+      padding: 0 15px;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.statistics__content {
+  display: flex;
+  justify-content: space-around;
+
+  @include xs {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.statistics__box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+
+  @include xs {
+    margin-bottom: 25px;
+  }
+
+  h3 {
+    font-family: $font-raleway;
+    font-weight: 800;
+    font-size: 1.25rem;
+    letter-spacing: 0.375rem;
+    padding: 15px 0;
+  }
+
+  p {
+    font-family: $font-raleway;
+    font-size: 1.0625rem;
+    color: $color-gray;
+  }
+}
+
+img {
+  position: absolute;
+}
+
+.statistics__img_person {
+  top: 5px;
+  right: 35px;
+}
+
+.statistics__img_eye {
+  top: 15px;
+  right: 60px;
+}
+
+.statistics__img_catalog {
+  top: 5px;
+  right: 40px;
+}

@@ -1,0 +1,10 @@
+@import "../../scss/settings/colors";
+@import "../../scss/settings/fonts";
+
+.logo {
+  font-family: $font-raleway;
+  font-size: 2rem;
+  font-weight: 300;
+  color: $color-primary;
+  text-decoration: none;
+}

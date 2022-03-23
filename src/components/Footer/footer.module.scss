@@ -1,0 +1,36 @@
+@import "src/scss/settings/colors";
+@import "src/scss/settings/fonts";
+
+.footer {
+  background: $color-light-gray;
+  box-shadow: 0 -5px 40px #00000029;
+  padding: 20px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1352px;
+    margin: 0 auto;
+
+    @media (max-width: 1352px) {
+      width: 100%;
+      padding: 0 15px;
+    }
+  }
+}
+
+.copyright {
+  p {
+    font-family: $font-open-sans;
+    font-size: 0.6875rem;
+    color: $color-gray;
+    padding-top: 6px;
+  }
+}
+
+.links {
+  .facebook {
+    margin: 0 40px;
+  }
+}

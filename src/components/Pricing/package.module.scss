@@ -1,0 +1,32 @@
+@import "src/scss/settings/mixins";
+@import "src/scss/settings/colors";
+@import "src/scss/settings/fonts";
+
+.pricing__name {
+
+  @include sm {
+    padding-left: 45px;
+  }
+}
+
+.pricing__ul {
+  @include sm {
+    margin: 25px 15px 25px 45px;
+  }
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include sm {
+    align-items: flex-start;
+  }
+
+  li {
+    font-family: $font-open-sans;
+    font-size: 0.875rem;
+    padding-bottom: 20px;
+  }
+}
